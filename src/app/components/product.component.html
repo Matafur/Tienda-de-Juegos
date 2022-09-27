@@ -1,0 +1,15 @@
+
+ <div class="productos">
+    <div style="text-align: center; margin-left: 25px;">
+      <h1>{{product.title}}</h1>
+      <hr>
+      <img  [src]="product.image" alt="">
+      <br>
+      <strong  >{{product.price/1000 |currency:'COP: $':true:'2.3-3'}}</strong>
+      <br>
+      <p>{{product.description | slice:0:40}}</p>
+      <button (click)="addCart()">agregar al carrito</button>
+      <hr>
+    </div>
+  </div>
+

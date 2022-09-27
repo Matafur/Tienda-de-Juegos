@@ -1,0 +1,12 @@
+:host{
+  margin: 2px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: block;
+  background-image: linear-gradient(75deg, #ffffb5 0, #ffffb0 10%, #ffffab 20%, #ffffa7 30%, #f3ffa2 40%, #d5f29d 50%, #b9df98 60%, #a3cf93 70%, #90c190 80%, #80b58d 90%, #74ab8c 100%);
+}
+img{
+
+  max-width: 80%;
+
+}
