@@ -1,19 +1,27 @@
-<app-header></app-header>
+
 
 <div class="container">
   <section>
     <img [src]="product.image" alt="Imagen Item">
   </section>
   <section class="detalle">
-    <p class="nombre">{{product.title}}</p>
-    <p class="descripcion" >{{product.description}}</p>
-    <p class="precio">{{product.price/1000 |currency:'COP: $':true:'2.3-3'}}</p>
-      <div class="detalles-id">
-        <button id="buy" type="button" (click)="addCart()"  class="btn btn-success">Add to cart</button>
+    <div></div>
+      <p class="nombre">{{product.title}}</p>
+      <p class="descripcion" >{{product.description}}</p>
+      <p class="precio">{{product.price/1000 |currency:'COP: $':true:'2.3-3'}}</p>
+
+
+  </section>
+  <section>
+    <div *ngFor="let marios of mario"></div>
+      <img [src]="mario" alt="mario">
+      <div class="botones">
+        <button id="buy" type="button" (click)="addCart()"  class="btn btn-success">Agregar al carro</button>
         <button  class="btn btn-danger" style="margin-left:5px;">
           <a class="detalle-id" [routerLink]="['/products'] ">Regresar</a>
         </button>
       </div>
   </section>
 </div>
+
 

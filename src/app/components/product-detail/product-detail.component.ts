@@ -12,9 +12,13 @@ import { ComprarService } from 'src/app/comprar.service';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
+  mario: string []=[
+    '../../../assets/imagen/mario.png',
+  ];
 
   @Output() productClicked: EventEmitter<any> = new EventEmitter();
   product: Product;
+
 
   addCart(){
     console.log('añadir al carrito');

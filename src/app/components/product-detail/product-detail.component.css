@@ -1,36 +1,44 @@
 
 
 .container{
-  display:flex;
-  flex-direction: row;
+  background-color: black;
   border: 1px solid white;
   border-radius: 10px;
   margin-top: 5%;
+  margin-left: 5%;
+  padding: 2% 5% 2% 5%;
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(300px,5fr));
 
 }
 
 div > section > img {
 
-  height: 400px;
+  height: 330px;
+  width: 330px;
+  object-fit: cover;
   margin-top: 5%;
   margin-left: 5%;
+  margin-right: 105%;
   margin-bottom: 5%;
 }
 
+
 .detalle{
   margin-top: 5%;
-  margin-left: 7%;
+  margin-left: 5%;
 }
 
 .nombre{
-  font-size: 50px;
+  width: 95%;
+  font-size: 300%;
   font-weight: 900;
   font-family: 'Courier New', Courier, monospace;
   color: rgba(167, 157, 163, 0.801);
 }
 
 .descripcion{
-  font-size: 30px;
+  font-size: 250%;
   font-weight: 900;
   font-family: 'Courier New', Courier, monospace;
   color: rgba(167, 157, 163, 0.801);
@@ -38,7 +46,7 @@ div > section > img {
 }
 
 .precio{
-  font-size: 30px;
+  font-size: 170%;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
   color: rgba(167, 157, 163, 0.801);
@@ -62,4 +70,8 @@ div > section > img {
   font-weight:bold ;
   text-decoration: none;
   margin-right: 5px;
+}
+
+.botones{
+  margin-left: 10%;
 }

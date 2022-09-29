@@ -8,7 +8,7 @@
       <strong  >{{product.price/1000 |currency:'COP: $':true:'2.3-3'}}</strong>
       <br>
       <p>{{product.description | slice:0:40}}</p>
-      <button type="button" (click)="addCart()"  class="btn btn-success">Add to cart</button>
+      <button type="button" (click)="addCart()"  class="btn btn-success">Agregar al carro</button>
       <button  class="btn btn-primary" style="margin-left:5px;">
         <a class="detalle" [routerLink]="['/products', product.id] ">Ver detalle</a>
       </button>
