@@ -1,9 +1,13 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable, Input, Output } from '@angular/core';
 import { Product } from './product.model';
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
+
+  @Input() product: Product ;
+  @Output() productClicked: EventEmitter<any> = new EventEmitter();
+
 
   products: Product [] = [
     {
@@ -87,5 +91,6 @@ export class ProductsService {
     return this.products.find(item => id === item.id);
 
   }
+
 
 }

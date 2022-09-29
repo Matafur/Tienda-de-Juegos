@@ -1,13 +1,19 @@
 :host{
-  margin: 2px;
+  margin: 2px ;
   border: 2px solid black;
   border-radius: 5px;
   display: block;
   background-image: linear-gradient(75deg, #ffffb5 0, #ffffb0 10%, #ffffab 20%, #ffffa7 30%, #f3ffa2 40%, #d5f29d 50%, #b9df98 60%, #a3cf93 70%, #90c190 80%, #80b58d 90%, #74ab8c 100%);
 }
+div>h1{
+  color: black;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
 img{
 
-  max-width: 60%;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
 }
 .detalle{
   color:white;
