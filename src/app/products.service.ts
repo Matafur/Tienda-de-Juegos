@@ -5,8 +5,6 @@ import { Product } from './product.model';
 })
 export class ProductsService {
 
-  @Input() product: Product ;
-  @Output() productClicked: EventEmitter<any> = new EventEmitter();
 
 
   products: Product [] = [
