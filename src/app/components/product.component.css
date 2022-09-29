@@ -7,6 +7,14 @@
 }
 img{
 
-  max-width: 80%;
+  max-width: 60%;
+}
+.detalle{
+  color:white;
+  text-decoration:none;
+  }
+
+.productos{
+  padding: 20px 5px 15px 0px;
 
 }

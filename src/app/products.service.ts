@@ -1,14 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { Product } from '../../product.model';
-
-
-
-@Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+import { Injectable } from '@angular/core';
+import { Product } from './product.model';
+@Injectable({
+  providedIn: 'root'
 })
-export class ProductsComponent implements OnInit {
+export class ProductsService {
 
   products: Product [] = [
     {
@@ -35,21 +30,21 @@ export class ProductsComponent implements OnInit {
     {
       id: '4',
       image: '../assets/imagen/PSP.png',
-      title: 'Consola "PSP"',
+      title: 'Play Station Portable',
       price: 40000,
       description: 'Consola PSP'
     },
     {
       id: '5',
       image: '../assets/imagen/Xbox 360.png',
-      title: 'Xbox 360',
+      title: 'Consola Xbox 360',
       price: 120000,
       description: 'Consola Xbox 360'
     },
     {
       id: '6',
       image: '../assets/imagen/Xbox.png',
-      title: 'Xbox One',
+      title: 'Consola Xbox One',
       price: 160000,
       description: 'Consola Xbox One'
     },
@@ -83,14 +78,14 @@ export class ProductsComponent implements OnInit {
     },
 ];
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {
+  getAllProducts(){
+    return this.products;
+  }
+  getProduct(id:string){
+    return this.products.find(item => id === item.id);
 
   }
 
-  clickProduct(id: number) {
-    console.log('product');
-    console.log(id);
-  }
 }

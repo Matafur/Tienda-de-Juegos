@@ -12,12 +12,13 @@ import { HeaderComponent } from './components/home/header/header.component';
 import { FooterComponent } from './components/home/footer/footer.component';
 import { BannerComponent } from './components/home/banner/banner.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,ProductComponent, CartComponent, HomeComponent, ProductsComponent, ContactComponent, HeaderComponent, FooterComponent, BannerComponent, PageNotFoundComponent,
+    AppComponent,ProductComponent, CartComponent, HomeComponent, ProductsComponent, ContactComponent, HeaderComponent, FooterComponent, BannerComponent, PageNotFoundComponent, ProductDetailComponent,
   ],
   imports: [
     BrowserModule, FormsModule, AppRoutingModule,
