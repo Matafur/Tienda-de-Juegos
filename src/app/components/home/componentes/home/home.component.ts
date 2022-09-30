@@ -1,6 +1,4 @@
 import { Component, OnInit, AfterViewInit  } from '@angular/core';
-import {HeaderComponent} from './header/header.component';
-import {BannerComponent} from './banner/banner.component';
 import Swiper from 'swiper';
 
 

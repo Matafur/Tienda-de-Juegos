@@ -2,7 +2,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import {ActivatedRoute, Params} from '@angular/router'
 import { ProductsService } from 'src/app/products.service';
 import { Product } from 'src/app/product.model';
-import {ProductComponent} from '../../components/product.component';
+import {ProductComponent} from '../product/product.component';
 import { ComprarService } from 'src/app/comprar.service';
 
 

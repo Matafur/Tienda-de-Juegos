@@ -1,6 +1,6 @@
 import { style } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../../product.model';
+import { Product } from '../../../product.model';
 
 
 
