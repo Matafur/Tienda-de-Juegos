@@ -1,12 +1,19 @@
-<h1 style="text-align:center">Tienda de Juegos Miguel </h1>
+<div id="navegacion">
+  <h1 style="text-align:center">Tienda de Juegos Miguel </h1>
 
-<div style="text-align: center;">
-  <input  type="text" placeholder="Te encontrare lo que buscas"  style="width:200px">
-  <!--<input  type="text" placeholder="Te encontrare lo que buscas" [(ngModel)]="title" width:305px>-->
+  <div style="text-align: center;">
+    <input  type="text" placeholder="Te encontrare lo que buscas"  style="width:200px">
+    <!--<input  type="text" placeholder="Te encontrare lo que buscas" [(ngModel)]="title" width:305px>-->
+  </div>
+
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <nav >
+        <a mat-stroked-button color="warn" routerLink="/home" routerLinkActive="active">Home </a>
+        <a mat-stroked-button color="warn" routerLink="/products" routerLinkActive="active">Productos </a>
+        <a mat-stroked-button color="warn" routerLink="/contact" routerLinkActive="active">Contacto </a>
+      </nav>
+    </mat-toolbar-row>
+  </mat-toolbar>
 </div>
 
-<nav >
-  <a routerLink="/home" routerLinkActive="active">Home </a>
-  <a routerLink="/products" routerLinkActive="active">Productos </a>
-  <a routerLink="/contact" routerLinkActive="active">Contacto </a>
-</nav>

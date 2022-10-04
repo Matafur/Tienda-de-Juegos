@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  iconos :string [] = [
+    '../../../../assets/imagen/telefono.png',
+    '../../../../assets/imagen/correo.png',
+    '../../../../assets/imagen/ubicacion.png'
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
