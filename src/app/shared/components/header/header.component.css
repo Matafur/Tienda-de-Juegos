@@ -24,6 +24,15 @@ h1{
 #navegacion{
   border-color: black;
 }
-mat-toolbar{
+.mat-toolbar{
   background-color: black;
 }
+.mat-icon{
+  color: wheat;
+
+}
+.header-row{
+
+
+}
+

@@ -5,15 +5,23 @@
     <input  type="text" placeholder="Te encontrare lo que buscas"  style="width:200px">
     <!--<input  type="text" placeholder="Te encontrare lo que buscas" [(ngModel)]="title" width:305px>-->
   </div>
-
-  <mat-toolbar>
-    <mat-toolbar-row>
-      <nav >
-        <a mat-stroked-button color="warn" routerLink="/home" routerLinkActive="active">Home </a>
-        <a mat-stroked-button color="warn" routerLink="/products" routerLinkActive="active">Productos </a>
-        <a mat-stroked-button color="warn" routerLink="/contact" routerLinkActive="active">Contacto </a>
-      </nav>
-    </mat-toolbar-row>
-  </mat-toolbar>
 </div>
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+
+      <nav >
+        <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
+        <a mat-button routerLink="/products" routerLinkActive="active">Products</a>
+        <a mat-button routerLink="/contact" routerLinkActive="active">Contact</a>
+      </nav>
+    <div class="ms-auto">
+      <a mat-button matBadge="4" matBadgeColor="warn">
+        <mat-icon>shopping_cart</mat-icon>
+        Carrito
+      </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
 
