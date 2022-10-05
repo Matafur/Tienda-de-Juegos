@@ -26,6 +26,7 @@ h1{
 }
 .mat-toolbar{
   background-color: black;
+  padding: 2%;
 }
 .mat-icon{
   color: wheat;
