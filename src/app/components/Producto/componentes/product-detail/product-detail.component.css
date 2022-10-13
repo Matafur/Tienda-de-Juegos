@@ -25,23 +25,26 @@ div > section > img {
 
 
 .detalle{
-  margin-top: 5%;
-  margin-left: 5%;
+  margin-top: 30%;
+  margin-left: 2%;
 }
 
 .nombre{
   width: 95%;
-  font-size: 300%;
-  font-weight: 900;
-  font-family: 'Courier New', Courier, monospace;
-  color: rgba(167, 157, 163, 0.801);
-}
-
-.descripcion{
   font-size: 250%;
   font-weight: 900;
   font-family: 'Courier New', Courier, monospace;
   color: rgba(167, 157, 163, 0.801);
+
+}
+
+.descripcion{
+  font-size: 200%;
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgba(167, 157, 163, 0.801);
+  margin-top: 5%;
+  margin-bottom: 5%;
 
 }
 
@@ -50,7 +53,8 @@ div > section > img {
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
   color: rgba(167, 157, 163, 0.801);
-
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .detalles-id{
